@@ -181,7 +181,7 @@ class DataSort extends React.Component<DataSortProps, DataSortState> {
       : render({
           data: paginate ? paginateData(sorted, activePage, itemsPerPage) : sorted,
           activePage,
-          pages,
+          pages: sorted.length,
           sortBy,
           direction,
           searchQuery,
